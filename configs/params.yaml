@@ -1,0 +1,46 @@
+# /vqc_sims/configs/params.yaml
+qubit_single:
+  H: 5.0 # Hamiltonian strength (GHz)
+  gamma: 0.01 # Decay rate
+  T1_us: 50.0 # Relaxation time (μs)
+  T2_us: 25.0 # Dephasing time (μs)
+  t_max: 50000.0 # Max time (ns)
+  n_steps: 100 # Time steps
+qubit_multi:
+  H: 5.0 # GHz
+  L_max: 1999 # Max OAM index
+  omega: 1.0 # Base frequency
+  coupling: 0.1 # Coupling strength
+  T1_us: 50.0
+  T2_us: 25.0
+  t_max: 100.0
+  n_steps: 100
+demix:
+  max_iter: 2000
+  n_components: 4 # ICA components
+  noise_level: 0.05 # Noise std
+  n_samples: 1000 # Samples
+photonics:
+  ell_list_eval: [0, 1, -1, 2, -2] # OAM modes to evaluate
+  N: 512 # Grid points
+  Nz: 100 # z-steps
+  lambda_nm: 1550.0 # Wavelength (nm)
+  w0: 0.5e-3 # Beam waist (m)
+  z_max: 10.0 # Max propagation (m)
+  prop_dist: 5.0 # Propagation distance (m)
+  chirp_rate: 1.0 # Chirp (GHz/ns)
+  turb_cn2: 1e-15 # Turbulence strength
+fidelity:
+  bmgl:
+    inhibition_factor: 1.2      # γ₁
+    qec_4qubit: false           # ← MUST disable when 8-qubit active
+    qec_8qubit: true            # ← NEW FLAG – 8-QUBIT QEC ENABLED
+quaternion:
+  enabled: true
+  detune_scale: 0.01
+knots:
+  gamma1_min: 0.0
+  gamma1_max: 10.0
+  n_points: 11
+  jitter: 1e-3 # S³ norm dev proxy
+  # eof

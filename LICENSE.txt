@@ -1,0 +1,13 @@
+Vortex Quaternion Conduit (VQC) Simulation Framework – Public Release
+Copyright (c) 2025 Aaron Michael Kinder
+
+This code is released under CC-BY-NC-SA-4.0 with additional patent restrictions.
+
+You may view, fork, and modify for non-commercial research purposes with attribution.
+Commercial use, sublicensing, or deployment requires written license from the patent holder.
+
+United States Provisional Patent Pending 63/913,110 (filed Oct 28, 2025)
+Amendment filed Nov 15, 2025 – OAM-DWDM + Isomap guards claimed.
+
+ALL RIGHTS NOT EXPRESSLY GRANTED ARE RESERVED.
+Contact: kinaar0@protonmail.com
