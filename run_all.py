@@ -10,7 +10,7 @@ from pathlib import Path
 # =============================================================================
 # CONFIGURATION – CANONICAL TRUTH
 # =============================================================================
-DEFAULT_L_MAX = 1999
+DEFAULT_L_MAX = 3999
 OUTPUT_DIR = Path("outputs")
 DATA_DIR = Path("data")
 ARCHIVE_ROOT = DATA_DIR
@@ -31,7 +31,7 @@ AUTO_DST = DATA_DIR / f"L{final_l}"
 PIPELINE_SCRIPTS = [
     "python src/qubit_dynamics.py",
     "python src/photonics.py",
-    "python src/demixing.py",
+    "python src/encode_decode.py",  # New: Integrated encoding/decoding with p-wave BMGL
     "python src/chem_error_corr.py",
     "python src/knots.py",
     "python src/isomap_integration.py",
