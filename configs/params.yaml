@@ -1,23 +1,25 @@
 # VQC Canonical Parameters — Phase 1.2.91 Ω
-# SINGLE SOURCE OF TRUTH — DO NOT EDIT MANUALLY UNLESS YOU KNOW YAML
+# SINGLE SOURCE OF TRUTH
 
 qubit_single:
   H: 5.0
-  gamma: 0.01
-  T1_us: 50.0
-  T2_us: 25.0
-  t_max: 50000.0
-  n_steps: 1000
+  T1_us: 500.0          # fluxonium-class relaxation
+  T2_us: 400.0          # p-wave + BMGL enhanced coherence
+  t_max_us: 100.0
+  n_steps: 500
 
 qubit_multi:
   H: 5.0
-  L_max: 1999
+  L_max: 25
   omega: 1.0
   coupling: 0.1
-  T1_us: 50.0
-  T2_us: 25.0
-  t_max: 100000.0
-  n_steps: 1000
+  t_max_us: 100.0
+  n_steps: 800
+
+fidelity:
+  bmgl:
+    inhibition_factor: 4.0
+    qec_16qubit: true
 
 demix:
   max_iter: 10000
@@ -36,10 +38,6 @@ photonics:
   chirp_rate: 1.0
   turb_cn2: 1e-15
 
-fidelity:
-  bmgl:
-    inhibition_factor: 1.25
-    qec_16qubit: true
 quaternion:
   enabled: true
   detune_scale: 0.01
