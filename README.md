@@ -60,7 +60,7 @@ Patent Alignment
 Nov 27 Amendment: Extends prior embodiments with validated simulations at L_max=199 and p-wave BMGL boosts (γ₁=1.5), incorporating 16-qubit QEC across modules. Yields mean gate fidelities of 0.9992, chemical QEC 0.9999912711, topological knot 1.000000, Isomap stress 0.0133, and infidelity floors ≤4.046e-11. Multi-beam architectures (L_inner=1999) maintain >99.92% fidelity, with demixing offsets confirming robust quaternion recovery. Enables Pb/s-class networks with minimal SWaP.
 Nov 26 Amendment: Incorporates p-wave helical magnets for BMGL, enabling atomic-scale spin helices with switchable orientation. Synergies: Dynamic gating via SOC (λ=0.4) and p-wave splitting (p=1.2), inhibiting errors by up to 8.88× at γ₁=1.5.
 Drawings: Updated cross-section includes fluxonium vaults and OAM modulation (see vqc_drawing_sheets.pdf).
-BMGL Protocol: Ties OAM rotation (30–45°/ns for |ℓ|≥5) to gating; formula: ω_ℓ(t) = ℓ × chirp_rate + detune_scale × α (α=0.03–0.035).
+BMGL Protocol: Ties OAM rotation (30–45°/ns for |ℓ| ≥5 ) to gating; formula: ω_ℓ(t) = ℓ × chirp_rate + detune_scale × α (α=0.03–0.035).
 
 For full details, see attached patent docs and Phys.org summary on p-wave magnets enabling smaller chips via helical spins.
 Dependencies
