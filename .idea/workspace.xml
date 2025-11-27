@@ -9,7 +9,6 @@
       <change beforePath="$PROJECT_DIR$/configs/params.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/configs/params.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run_all.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_all.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/photonics.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/photonics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/qubit_dynamics.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/qubit_dynamics.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

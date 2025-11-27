@@ -10,7 +10,7 @@ from pathlib import Path
 # =============================================================================
 # CONFIGURATION – CANONICAL TRUTH
 # =============================================================================
-DEFAULT_L_MAX = 25
+DEFAULT_L_MAX = 199
 OUTPUT_DIR = Path("outputs")
 DATA_DIR = Path("data")
 ARCHIVE_ROOT = DATA_DIR
